@@ -29,7 +29,14 @@
                             <outlet property="delegate" destination="CCR-nk-2K3" id="fbn-Qk-xoD"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todo" id="X4a-J4-GkD"/>
+                    <navigationItem key="navigationItem" title="Todo" id="X4a-J4-GkD">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5PT-2q-c3p">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="CCR-nk-2K3" id="fba-v3-lXd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6SP-M7-5e5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
